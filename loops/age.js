@@ -1,10 +1,9 @@
-// Display ages in a for loop 
+// Display ages in a for loop
 rlSync = require("readline-sync")
 let age = Number(rlSync.question("How old are ya? \n"))
 
 console.log(`Your age : ${age}`);
 
-console.log(`In 10 years you'll be ${age+10}`);
-console.log(`In 20 years you'll be ${age + 20}`);
-console.log(`In 30 years you'll be ${age + 30}`);
-console.log(`In 40 years you'll be ${age + 40}`);
+for (var i = 1; i < 4; i++) {
+  console.log(`In ${i*10} years you will be ${i*10+age}`);
+}
